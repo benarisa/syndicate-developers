@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Syndicate Developers - Get in touch for web development, mobile apps, AI solutions, and software consulting.">
+    <meta name="keywords" content="contact, get quote, web development, mobile apps, software development, consulting">
+    <meta name="author" content="Syndicate Developers">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://syndicatedev.example/contact/">
+    <meta property="og:title" content="Contact Us - Syndicate Developers">
+    <meta property="og:description" content="Get in touch with our expert team for web development, mobile apps, AI solutions, and software consulting services.">
+    <meta property="og:image" content="https://syndicatedev.example/images/contact-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://syndicatedev.example/contact/">
+    <meta property="twitter:title" content="Contact Us - Syndicate Developers">
+    <meta property="twitter:description" content="Get in touch with our expert team for web development, mobile apps, AI solutions, and software consulting services.">
+    <meta property="twitter:image" content="https://syndicatedev.example/images/contact-twitter.jpg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Syndicate Developers",
+        "url": "https://syndicatedev.example/contact",
+        "description": "Contact page for Syndicate Developers - professional software development services.",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "Syndicate Developers",
+            "email": "syndicatedev19@gmail.com",
+            "telephone": "+254703143073",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "US",
+                "addressLocality": "San Francisco",
+                "addressRegion": "CA"
+            }
+        }
+    }
+    </script>
+
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="dns-prefetch" href="https://formspree.io">
+    <link rel="preload" href="css/styles.css" as="style">
+
+    <title>Contact Us - Syndicate Developers</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="sidebar-expanded">
+    <!-- Top white bar with title and slogan -->
+    <div class="top-bar" role="banner">
+        <div class="top-bar-inner">
+            <div class="top-title">Syndicate Developers</div>
+            <div class="top-slogan">Crafting performant software — fast, reliable, beautiful</div>
+            <pre id="code-runner" class="top-code" aria-hidden="true"></pre>
+            <div class="top-controls">
+                <button id="hero-toggle" class="hero-toggle" aria-pressed="false" title="Pause or resume hero animations">Pause</button>
+            </div>
+        </div>
+    </div>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+
+    <header>
+        <nav aria-label="Main navigation" class="ai-nav sidebar-nav expanded">
+            <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="true">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-brand">
+                <div class="logo">
+                    <i class="fas fa-code ai-icon"></i>
+                    <span>Syndicate Developers</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Trusted</span>
+                </div>
+            </div>
+            <div class="nav-controls">
+                <ul class="nav-list">
+                    <li>
+                        <a href="home.html" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-link">
+                            <i class="fas fa-users"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.html" class="nav-link">
+                            <i class="fas fa-cogs"></i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html" class="nav-link">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Portfolio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-link active cta-nav" aria-current="page">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Get Quote</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="language-selector">
+                    <select id="language-select" onchange="changeLanguage()" aria-label="Select language">
+                        <option value="en">🇺🇸 EN</option>
+                        <option value="es">🇪🇸 ES</option>
+                        <option value="fr">🇫🇷 FR</option>
+                        <option value="de">🇩🇪 DE</option>
+                        <option value="zh">🇨🇳 中文</option>
+                        <option value="ja">🇯🇵 日本語</option>
+                        <option value="pt">🇧🇷 PT</option>
+                        <option value="ar">🇸🇦 العربية</option>
+                    </select>
+                </div>
+                <div class="nav-status">
+                    <div class="status-indicator online">
+                        <i class="fas fa-circle"></i>
+                        <span>Online</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Contact Us</h1>
+                <p>Let's discuss your project and bring your vision to life</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <h2>Get Your Project Started</h2>
+            <div class="availability-badge">
+                <i class="fas fa-clock"></i> Available 24/7
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>How to Reach Us</h3>
+                    <p><strong>Email:</strong> <a href="mailto:syndicatedev19@gmail.com">syndicatedev19@gmail.com</a></p>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/0703143073" target="_blank">+254 703 143 073</a></p>
+                    <p><strong>Support:</strong> 24/7 Customer Support</p>
+                    <p class="support-text">We're always available to discuss your project, respond to queries, and provide emergency support.</p>
+
+                    <h4>Response Times</h4>
+                    <ul class="response-times">
+                        <li><i class="fas fa-envelope"></i> <strong>Email:</strong> Within 2 hours</li>
+                        <li><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> Within 30 minutes</li>
+                        <li><i class="fas fa-exclamation-triangle"></i> <strong>Emergency:</strong> Immediate response</li>
+                    </ul>
+
+                    <div class="social-links">
+                        <a href="https://github.com/benarisa" target="_blank" title="GitHub" aria-label="Visit our GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://facebook.com/syndicates" target="_blank" title="Facebook" aria-label="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://t.me/syndicates" target="_blank" title="Telegram" aria-label="Join our Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://wa.me/0703143073" target="_blank" title="WhatsApp" aria-label="Contact us on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form" onsubmit="handleUniversalFormSubmit(event, 'contact');" aria-describedby="form-description">
+                    <h3>Send us a Message</h3>
+                    <p id="form-description">Fill out this form and we'll get back to you within 2 hours with a personalized quote.</p>
+
+                    <div class="form-group">
+                        <label for="name">Name <span aria-label="required">*</span></label>
+                        <input type="text" id="name" name="name" aria-required="true" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span aria-label="required">*</span></label>
+                        <input type="email" id="email" name="email" aria-required="true" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-type">Project Type</label>
+                        <select id="project-type" name="project-type">
+                            <option value="">Select...</option>
+                            <option value="web">Web Application</option>
+                            <option value="mobile">Mobile App</option>
+                            <option value="backend">Backend/API</option>
+                            <option value="ai-ml">AI & Machine Learning</option>
+                            <option value="cloud">Cloud Services</option>
+                            <option value="consulting">Consulting</option>
+                            <option value="emergency">Emergency Support</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select...</option>
+                            <option value="under-5k">Under $5,000</option>
+                            <option value="5k-15k">$5,000 - $15,000</option>
+                            <option value="15k-50k">$15,000 - $50,000</option>
+                            <option value="50k-100k">$50,000 - $100,000</option>
+                            <option value="over-100k">Over $100,000</option>
+                            <option value="discuss">Let's discuss</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="timeline">Timeline</label>
+                        <select id="timeline" name="timeline">
+                            <option value="">Select...</option>
+                            <option value="asap">ASAP</option>
+                            <option value="1-month">Within 1 month</option>
+                            <option value="2-3-months">2-3 months</option>
+                            <option value="3-6-months">3-6 months</option>
+                            <option value="6-months-plus">6+ months</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Tell us about your project <span aria-label="required">*</span></label>
+                        <textarea id="message" name="message" rows="6" placeholder="Describe your project, goals, requirements, and any specific challenges..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <p class="form-note">
+                        <i class="fas fa-shield-alt"></i> Secure form • Response within 2 hours • No spam, ever
+                    </p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Support Section -->
+        <section class="support-section">
+            <h2>Always Here When You Need Us</h2>
+            <p>24/7 availability means we're working around the clock for you</p>
+            <div class="support-grid">
+                <div class="support-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support for your peace of mind.</p>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Quick Response Time</h3>
+                    <p>Response within 2 hours, even during nights and weekends.</p>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h3>Emergency Support</h3>
+                    <p>Critical issues handled immediately by our senior team.</p>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>SLA Guarantee</h3>
+                    <p>99.9% uptime SLA on all production systems.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How quickly can you start my project?</h3>
+                    <p>We can typically start within 1-2 weeks, depending on project complexity and our current workload. For urgent projects, we offer expedited onboarding.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you work with international clients?</h3>
+                    <p>Absolutely! We work with clients worldwide and have experience with different time zones, languages, and cultural contexts. Our global presence ensures smooth collaboration.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What is your typical project timeline?</h3>
+                    <p>Project timelines vary based on scope and complexity. Simple websites take 2-4 weeks, while complex applications may take 3-6 months. We'll provide a detailed timeline during our initial consultation.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you provide ongoing maintenance?</h3>
+                    <p>Yes! We offer comprehensive maintenance packages including bug fixes, security updates, performance optimization, and feature enhancements. We also provide 24/7 monitoring and support.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do you handle project communication?</h3>
+                    <p>We use multiple communication channels including email, WhatsApp, video calls, and project management tools. You'll have a dedicated project manager and direct access to our development team.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What if I'm not satisfied with the work?</h3>
+                    <p>Your satisfaction is our priority. We offer unlimited revisions during development and a 30-day satisfaction guarantee post-launch. We work closely with you to ensure the final product exceeds your expectations.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Fill out the form above or contact us directly. Let's create something amazing together.</p>
+                <a href="services.html" class="btn btn-secondary">View Our Services</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Syndicate Developers</h3>
+                <p>Building the future, one line of code at a time.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Follow us on GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html#web-development">Web Development</a></li>
+                    <li><a href="services.html#mobile-apps">Mobile Apps</a></li>
+                    <li><a href="services.html#ai-ml">AI & Machine Learning</a></li>
+                    <li><a href="services.html#cloud-services">Cloud Services</a></li>
+                    <li><a href="services.html#consulting">Consulting</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-envelope"></i> syndicatedev19@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Syndicate Developers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/chatbot.js"></script>
+
+    <!-- Chatbot Widget -->
+    <div class="chat-widget">
+        <button class="chat-button" id="chat-toggle" aria-label="Toggle chat window">
+            <i class="fas fa-comments"></i>
+            <span class="chat-badge" id="chat-badge" style="display:none;">1</span>
+        </button>
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <div>
+                    <h4>Syndicate Assistant</h4>
+                    <div class="chat-header-info">🟢 Online - Usually replies instantly</div>
+                </div>
+                <button class="chat-close" id="chat-close">✕</button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot">
+                    <div class="message-avatar">💬</div>
+                    <div class="message-content">
+                        <div class="message-bubble">Hi! 👋 I'm Davis from Syndicate Developers. How can I help you today?</div>
+                        <div class="message-author">Davis</div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input-field" placeholder="Ask me anything...">
+                <button id="chat-send" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

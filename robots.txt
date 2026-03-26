@@ -1,0 +1,23 @@
+# Syndicate Developers - robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Allow crawling of important pages
+Allow: /
+
+# Sitemap location
+Sitemap: https://syndicatedev.example/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# User-agent specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 5

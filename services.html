@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional software development services - Web development, mobile apps, AI/ML, cloud solutions, and consulting.">
+    <meta name="keywords" content="software development services, web development, mobile apps, AI, machine learning, cloud computing, consulting">
+    <meta name="author" content="Syndicate Developers">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://syndicatedev.example/services/">
+    <meta property="og:title" content="Services - Syndicate Developers">
+    <meta property="og:description" content="Professional software development services including web development, mobile apps, AI/ML, and cloud solutions.">
+    <meta property="og:image" content="https://syndicatedev.example/images/services-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://syndicatedev.example/services/">
+    <meta property="twitter:title" content="Services - Syndicate Developers">
+    <meta property="twitter:description" content="Professional software development services including web development, mobile apps, AI/ML, and cloud solutions.">
+    <meta property="twitter:image" content="https://syndicatedev.example/images/services-twitter.jpg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Syndicate Developers Services",
+        "url": "https://syndicatedev.example/services",
+        "description": "Professional software development services including web development, mobile applications, AI/ML solutions, and cloud services.",
+        "provider": {
+            "@type": "Organization",
+            "name": "Syndicate Developers"
+        }
+    }
+    </script>
+
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="dns-prefetch" href="https://formspree.io">
+    <link rel="preload" href="css/styles.css" as="style">
+
+    <title>Services - Syndicate Developers</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="sidebar-expanded">
+    <!-- Top white bar with title and slogan -->
+    <div class="top-bar" role="banner">
+        <div class="top-bar-inner">
+            <div class="top-title">Syndicate Developers</div>
+            <div class="top-slogan">Crafting performant software — fast, reliable, beautiful</div>
+            <pre id="code-runner" class="top-code" aria-hidden="true"></pre>
+            <div class="top-controls">
+                <button id="hero-toggle" class="hero-toggle" aria-pressed="false" title="Pause or resume hero animations">Pause</button>
+            </div>
+        </div>
+    </div>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+
+    <header>
+        <nav aria-label="Main navigation" class="ai-nav sidebar-nav expanded">
+            <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="true">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-brand">
+                <div class="logo">
+                    <i class="fas fa-code ai-icon"></i>
+                    <span>Syndicate Developers</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Trusted</span>
+                </div>
+            </div>
+            <div class="nav-controls">
+                <ul class="nav-list">
+                    <li>
+                        <a href="home.html" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-link">
+                            <i class="fas fa-users"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.html" class="nav-link active" aria-current="page">
+                            <i class="fas fa-cogs"></i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html" class="nav-link">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Portfolio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-link cta-nav">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Get Quote</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="language-selector">
+                    <select id="language-select" onchange="changeLanguage()" aria-label="Select language">
+                        <option value="en">🇺🇸 EN</option>
+                        <option value="es">🇪🇸 ES</option>
+                        <option value="fr">🇫🇷 FR</option>
+                        <option value="de">🇩🇪 DE</option>
+                        <option value="zh">🇨🇳 中文</option>
+                        <option value="ja">🇯🇵 日本語</option>
+                        <option value="pt">🇧🇷 PT</option>
+                        <option value="ar">🇸🇦 العربية</option>
+                    </select>
+                </div>
+                <div class="nav-status">
+                    <div class="status-indicator online">
+                        <i class="fas fa-circle"></i>
+                        <span>Online</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Our Services</h1>
+                <p>Comprehensive software solutions tailored to your business needs</p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section">
+            <h2>Expert Software Development Services</h2>
+            <p class="section-intro">From concept to deployment, we deliver high-quality solutions that drive business growth</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3 id="web-development">Web Development</h3>
+                    <p>Custom web applications built with modern technologies. Responsive, fast, and secure.</p>
+                    <ul>
+                        <li>Frontend (React, Vue, Angular)</li>
+                        <li>Backend (Node.js, Python, PHP)</li>
+                        <li>Full-stack solutions</li>
+                        <li>E-commerce platforms</li>
+                        <li>Progressive Web Apps (PWAs)</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3 id="mobile-apps">Mobile Apps</h3>
+                    <p>Native and cross-platform mobile applications for iOS and Android.</p>
+                    <ul>
+                        <li>Flutter Development</li>
+                        <li>React Native</li>
+                        <li>Native iOS/Android</li>
+                        <li>App Store Optimization</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-brain"></i>
+                    <h3 id="ai-ml">AI & Machine Learning</h3>
+                    <p>Intelligent solutions powered by cutting-edge AI technologies.</p>
+                    <ul>
+                        <li>Natural Language Processing</li>
+                        <li>Computer Vision</li>
+                        <li>Predictive Analytics</li>
+                        <li>Chatbots & Virtual Assistants</li>
+                        <li>Recommendation Systems</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3 id="cloud-services">Cloud Services</h3>
+                    <p>Scalable cloud infrastructure and migration services.</p>
+                    <ul>
+                        <li>AWS/Azure/GCP Setup</li>
+                        <li>Cloud Migration</li>
+                        <li>Serverless Architecture</li>
+                        <li>DevOps & CI/CD</li>
+                        <li>Monitoring & Security</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Backend & APIs</h3>
+                    <p>Scalable backend infrastructure and RESTful APIs for your business.</p>
+                    <ul>
+                        <li>Database Design & Optimization</li>
+                        <li>RESTful & GraphQL APIs</li>
+                        <li>Microservices Architecture</li>
+                        <li>Real-time Applications</li>
+                        <li>API Security & Documentation</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful, intuitive designs that users love.</p>
+                    <ul>
+                        <li>User Research & Analysis</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>Interactive Design</li>
+                        <li>Usability Testing</li>
+                        <li>Design Systems</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Maintenance & Support</h3>
+                    <p>Keep your applications running smoothly with ongoing support.</p>
+                    <ul>
+                        <li>Bug Fixes & Updates</li>
+                        <li>Performance Optimization</li>
+                        <li>Security Patches</li>
+                        <li>Feature Enhancements</li>
+                        <li>24/7 Technical Support</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cube"></i>
+                    <h3 id="consulting">Consulting</h3>
+                    <p>Expert advice on technology choices and best practices.</p>
+                    <ul>
+                        <li>Technology Stack Selection</li>
+                        <li>Architecture Planning</li>
+                        <li>Code Review & Auditing</li>
+                        <li>Performance Analysis</li>
+                        <li>Security Assessments</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="section">
+            <h2>Service Pricing</h2>
+            <p class="section-intro">Transparent pricing for high-quality software development services</p>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Web Development</h3>
+                    <div class="price">$2,500 - $15,000</div>
+                    <p class="price-period">per project</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Frontend Development</li>
+                        <li><i class="fas fa-check"></i> Backend Integration</li>
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> SEO Optimization</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="best-value">Most Popular</div>
+                    <h3>Mobile Apps</h3>
+                    <div class="price">$5,000 - $25,000</div>
+                    <p class="price-period">per app</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> iOS & Android</li>
+                        <li><i class="fas fa-check"></i> Native Performance</li>
+                        <li><i class="fas fa-check"></i> App Store Submission</li>
+                        <li><i class="fas fa-check"></i> Post-Launch Support</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>AI & ML Solutions</h3>
+                    <div class="price">$8,000 - $50,000</div>
+                    <p class="price-period">per project</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Model Development</li>
+                        <li><i class="fas fa-check"></i> Data Processing</li>
+                        <li><i class="fas fa-check"></i> Integration Support</li>
+                        <li><i class="fas fa-check"></i> Maintenance & Updates</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Cloud Services</h3>
+                    <div class="price">$1,500 - $8,000</div>
+                    <p class="price-period">per month</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Infrastructure Setup</li>
+                        <li><i class="fas fa-check"></i> 24/7 Monitoring</li>
+                        <li><i class="fas fa-check"></i> Security & Backups</li>
+                        <li><i class="fas fa-check"></i> Scalability Management</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Consulting</h3>
+                    <div class="price">$150 - $300</div>
+                    <p class="price-period">per hour</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Expert Recommendations</li>
+                        <li><i class="fas fa-check"></i> Architecture Design</li>
+                        <li><i class="fas fa-check"></i> Code Audits</li>
+                        <li><i class="fas fa-check"></i> Training Sessions</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Support & Maintenance</h3>
+                    <div class="price">$500 - $5,000</div>
+                    <p class="price-period">per month</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Bug Fixes</li>
+                        <li><i class="fas fa-check"></i> Updates & Patches</li>
+                        <li><i class="fas fa-check"></i> Performance Optimization</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pricing-note">
+                <p><strong>💡 Note:</strong> Pricing varies based on project complexity, timeline, and specific requirements. Contact us for a detailed quote tailored to your needs.</p>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="section">
+            <h2>Our Development Process</h2>
+            <p class="section-intro">A proven methodology that ensures project success</p>
+
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="process-number">1</div>
+                    <h3>Discovery & Planning</h3>
+                    <p>We start by understanding your business needs, goals, and technical requirements through detailed consultation and analysis.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">2</div>
+                    <h3>Design & Prototyping</h3>
+                    <p>Our design team creates wireframes, mockups, and interactive prototypes to visualize the solution before development begins.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">3</div>
+                    <h3>Development & Testing</h3>
+                    <p>Agile development with continuous integration, automated testing, and regular client feedback to ensure quality delivery.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">4</div>
+                    <h3>Deployment & Support</h3>
+                    <p>Seamless deployment with comprehensive documentation, training, and ongoing support to ensure long-term success.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section class="section">
+            <h2>Technologies We Use</h2>
+            <p class="section-intro">Modern tools and frameworks for robust, scalable solutions</p>
+
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h3>Frontend</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Sass/SCSS</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Backend</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">GraphQL</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Mobile</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">Kotlin</span>
+                        <span class="tech-tag">Ionic</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Cloud & DevOps</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">Jenkins</span>
+                        <span class="tech-tag">Terraform</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>AI/ML</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">OpenAI</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">NLP</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Databases</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Elasticsearch</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's discuss your requirements and create something amazing together.</p>
+                <a href="contact.html" class="btn btn-primary">Get Free Consultation</a>
+                <a href="portfolio.html" class="btn btn-secondary">View Our Work</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Syndicate Developers</h3>
+                <p>Building the future, one line of code at a time.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/syndicate-developers" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/syndicatedev" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/benarisa" target="_blank" rel="noopener noreferrer" aria-label="Follow us on GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/syndicatedev" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/syndicatedev" target="_blank" rel="noopener noreferrer" aria-label="Like us on Facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#web-development">Web Development</a></li>
+                    <li><a href="#mobile-apps">Mobile Apps</a></li>
+                    <li><a href="#ai-ml">AI & Machine Learning</a></li>
+                    <li><a href="#cloud-services">Cloud Services</a></li>
+                    <li><a href="#consulting">Consulting</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-envelope"></i> syndicatedev19@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Syndicate Developers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/chatbot.js"></script>
+
+    <!-- Chatbot Widget -->
+    <div class="chat-widget">
+        <button class="chat-button" id="chat-toggle" aria-label="Toggle chat window">
+            <i class="fas fa-comments"></i>
+            <span class="chat-badge" id="chat-badge" style="display:none;">1</span>
+        </button>
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <div>
+                    <h4>Syndicate Assistant</h4>
+                    <div class="chat-header-info">🟢 Online - Usually replies instantly</div>
+                </div>
+                <button class="chat-close" id="chat-close">✕</button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot">
+                    <div class="message-avatar">💬</div>
+                    <div class="message-content">
+                        <div class="message-bubble">Hi! 👋 I'm Davis from Syndicate Developers. How can I help you today?</div>
+                        <div class="message-author">Davis</div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input-field" placeholder="Ask me anything...">
+                <button id="chat-send" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

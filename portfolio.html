@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Syndicate Developers - Web applications, mobile apps, AI solutions, and enterprise software projects.">
+    <meta name="keywords" content="portfolio, case studies, web development projects, mobile apps, software development, AI projects">
+    <meta name="author" content="Syndicate Developers">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://syndicatedev.example/portfolio/">
+    <meta property="og:title" content="Portfolio - Syndicate Developers">
+    <meta property="og:description" content="Explore our portfolio of successful web applications, mobile apps, AI solutions, and enterprise software projects.">
+    <meta property="og:image" content="https://syndicatedev.example/images/portfolio-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://syndicatedev.example/portfolio/">
+    <meta property="twitter:title" content="Portfolio - Syndicate Developers">
+    <meta property="twitter:description" content="Explore our portfolio of successful web applications, mobile apps, AI solutions, and enterprise software projects.">
+    <meta property="twitter:image" content="https://syndicatedev.example/images/portfolio-twitter.jpg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Portfolio - Syndicate Developers",
+        "url": "https://syndicatedev.example/portfolio",
+        "description": "Portfolio showcasing successful software development projects including web applications, mobile apps, and AI solutions.",
+        "provider": {
+            "@type": "Organization",
+            "name": "Syndicate Developers"
+        }
+    }
+    </script>
+
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="dns-prefetch" href="https://formspree.io">
+    <link rel="preload" href="css/styles.css" as="style">
+
+    <title>Portfolio - Syndicate Developers</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="sidebar-expanded">
+    <!-- Top white bar with title and slogan -->
+    <div class="top-bar" role="banner">
+        <div class="top-bar-inner">
+            <div class="top-title">Syndicate Developers</div>
+            <div class="top-slogan">Crafting performant software — fast, reliable, beautiful</div>
+            <pre id="code-runner" class="top-code" aria-hidden="true"></pre>
+            <div class="top-controls">
+                <button id="hero-toggle" class="hero-toggle" aria-pressed="false" title="Pause or resume hero animations">Pause</button>
+            </div>
+        </div>
+    </div>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+
+    <header>
+        <nav aria-label="Main navigation" class="ai-nav sidebar-nav expanded">
+            <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="true">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-brand">
+                <div class="logo">
+                    <i class="fas fa-code ai-icon"></i>
+                    <span>Syndicate Developers</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Trusted</span>
+                </div>
+            </div>
+            <div class="nav-controls">
+                <ul class="nav-list">
+                    <li>
+                        <a href="home.html" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-link">
+                            <i class="fas fa-users"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.html" class="nav-link">
+                            <i class="fas fa-cogs"></i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html" class="nav-link active" aria-current="page">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Portfolio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-link cta-nav">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Get Quote</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="language-selector">
+                    <select id="language-select" onchange="changeLanguage()" aria-label="Select language">
+                        <option value="en">🇺🇸 EN</option>
+                        <option value="es">🇪🇸 ES</option>
+                        <option value="fr">🇫🇷 FR</option>
+                        <option value="de">🇩🇪 DE</option>
+                        <option value="zh">🇨🇳 中文</option>
+                        <option value="ja">🇯🇵 日本語</option>
+                        <option value="pt">🇧🇷 PT</option>
+                        <option value="ar">🇸🇦 العربية</option>
+                    </select>
+                </div>
+                <div class="nav-status">
+                    <div class="status-indicator online">
+                        <i class="fas fa-circle"></i>
+                        <span>Online</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Our Portfolio</h1>
+                <p>Showcasing innovation through successful projects and satisfied clients</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section">
+            <h2>Featured Projects</h2>
+            <p class="section-intro">Explore our recent work across web, mobile, and enterprise solutions</p>
+
+            <div class="projects-grid">
+                <div class="project">
+                    <div class="project-badge">Web</div>
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=300&h=200&fit=crop" alt="Project Alpha Screenshot" class="project-image">
+                    <h3>Project Alpha</h3>
+                    <p>A comprehensive web application for task management that helps teams collaborate efficiently with real-time updates and advanced analytics.</p>
+
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <strong>Tech Stack:</strong> React, Node.js, PostgreSQL, Redux, Docker
+                        </div>
+                        <div class="detail-item">
+                            <strong>Results:</strong> 25,000+ active users, 99.95% uptime, 1.2s avg response time, 40% increase in team productivity
+                        </div>
+                        <div class="detail-item">
+                            <strong>API:</strong> RESTful API with 50+ endpoints
+                        </div>
+                        <div class="detail-item">
+                            <strong>Performance:</strong> Lighthouse: 95/100, PageSpeed: 98/100
+                        </div>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" title="View Source Code">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" target="_blank" title="Live Demo">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" target="_blank" title="API Documentation">
+                            <i class="fas fa-book"></i> API Docs
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-badge">Mobile</div>
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=300&h=200&fit=crop" alt="Project Beta Screenshot" class="project-image">
+                    <h3>Project Beta</h3>
+                    <p>A feature-rich mobile e-commerce application with real-time inventory synchronization, secure payments, and offline capabilities.</p>
+
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <strong>Tech Stack:</strong> Flutter, Firebase, Stripe API, GetX
+                        </div>
+                        <div class="detail-item">
+                            <strong>Results:</strong> 75,000+ downloads, 4.9★ rating, 350,000+ transactions processed, 95% user retention rate
+                        </div>
+                        <div class="detail-item">
+                            <strong>Features:</strong> Real-time notifications, Offline mode, Payment gateway
+                        </div>
+                        <div class="detail-item">
+                            <strong>Performance:</strong> App size: 45MB, Launch time: 1.2s
+                        </div>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" title="View Source Code">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" target="_blank" title="Live Demo">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" target="_blank" title="API Documentation">
+                            <i class="fas fa-book"></i> API Docs
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-badge">Backend</div>
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop" alt="Project Gamma Screenshot" class="project-image">
+                    <h3>Project Gamma</h3>
+                    <p>An enterprise SaaS platform with multi-tenant architecture, advanced analytics dashboard, and automated billing system.</p>
+
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <strong>Tech Stack:</strong> Python, Django, PostgreSQL, Celery, Redis, AWS
+                        </div>
+                        <div class="detail-item">
+                            <strong>Results:</strong> 150+ enterprise clients, $750K+ annual recurring revenue, 99.99% SLA, 60% cost reduction for clients
+                        </div>
+                        <div class="detail-item">
+                            <strong>API:</strong> GraphQL + REST APIs, WebSocket support
+                        </div>
+                        <div class="detail-item">
+                            <strong>Infrastructure:</strong> Kubernetes deployment, Auto-scaling, CDN
+                        </div>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" title="View Source Code">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" target="_blank" title="Live Demo">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" target="_blank" title="API Documentation">
+                            <i class="fas fa-book"></i> API Docs
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-badge">AI</div>
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop" alt="Project Delta Screenshot" class="project-image">
+                    <h3>Project Delta</h3>
+                    <p>An AI-powered customer service chatbot with natural language processing, sentiment analysis, and multi-language support.</p>
+
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <strong>Tech Stack:</strong> Python, TensorFlow, React, FastAPI, PostgreSQL
+                        </div>
+                        <div class="detail-item">
+                            <strong>Results:</strong> 85% query resolution rate, 24/7 availability, 12 languages supported, 70% reduction in support tickets
+                        </div>
+                        <div class="detail-item">
+                            <strong>AI Features:</strong> Intent recognition, Sentiment analysis, Context awareness
+                        </div>
+                        <div class="detail-item">
+                            <strong>Performance:</strong> Response time: 0.3s, Accuracy: 94%
+                        </div>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" title="View Source Code">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" target="_blank" title="Live Demo">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" target="_blank" title="API Documentation">
+                            <i class="fas fa-book"></i> API Docs
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-badge">IoT</div>
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=200&fit=crop" alt="Project Epsilon Screenshot" class="project-image">
+                    <h3>Project Epsilon</h3>
+                    <p>An IoT platform for smart agriculture with real-time monitoring, predictive analytics, and automated irrigation systems.</p>
+
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <strong>Tech Stack:</strong> Node.js, MongoDB, MQTT, Raspberry Pi, AWS IoT
+                        </div>
+                        <div class="detail-item">
+                            <strong>Results:</strong> 10,000+ sensors deployed, 35% water savings, 28% yield increase, Real-time monitoring
+                        </div>
+                        <div class="detail-item">
+                            <strong>Features:</strong> Predictive maintenance, Automated alerts, Data visualization
+                        </div>
+                        <div class="detail-item">
+                            <strong>Scalability:</strong> Supports 100K+ concurrent devices
+                        </div>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" title="View Source Code">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" target="_blank" title="Live Demo">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" target="_blank" title="API Documentation">
+                            <i class="fas fa-book"></i> API Docs
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-badge">FinTech</div>
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop" alt="Project Zeta Screenshot" class="project-image">
+                    <h3>Project Zeta</h3>
+                    <p>A secure banking application with biometric authentication, real-time fraud detection, and seamless payment processing.</p>
+
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <strong>Tech Stack:</strong> React Native, Node.js, PostgreSQL, Redis, AWS
+                        </div>
+                        <div class="detail-item">
+                            <strong>Results:</strong> 500K+ active users, 99.99% uptime, $2.1B transaction volume, SOC 2 Type II compliant
+                        </div>
+                        <div class="detail-item">
+                            <strong>Security:</strong> Biometric auth, End-to-end encryption, Real-time fraud detection
+                        </div>
+                        <div class="detail-item">
+                            <strong>Compliance:</strong> PCI DSS, GDPR, PSD2 compliant
+                        </div>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" title="View Source Code">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" target="_blank" title="Live Demo">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" target="_blank" title="API Documentation">
+                            <i class="fas fa-book"></i> API Docs
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <section class="code-samples">
+                <h3>Code Examples from Our Projects</h3>
+                <div class="code-grid">
+                    <div class="code-block">
+                        <h4>React Custom Hook</h4>
+                        <pre><code>const useTaskManager = () =&gt; {
+  const [tasks, setTasks] = useState([]);
+
+  const addTask = (task) =&gt; {
+    setTasks([...tasks, task]);
+  };
+
+  const toggleTask = (id) =&gt; {
+    setTasks(tasks.map(task =&gt;
+      task.id === id
+        ? { ...task, completed: !task.completed }
+        : task
+    ));
+  };
+
+  return { tasks, addTask, toggleTask };
+};</code></pre>
+                    </div>
+                    <div class="code-block">
+                        <h4>Node.js API with Authentication</h4>
+                        <pre><code>app.get('/api/tasks', authenticateToken, async (req, res) =&gt; {
+  try {
+    const tasks = await Task.find({
+      userId: req.user.id
+    }).sort({ createdAt: -1 });
+
+    res.json({
+      success: true,
+      data: tasks
+    });
+  } catch (error) {
+    console.error('Error fetching tasks:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Internal server error'
+    });
+  }
+});</code></pre>
+                    </div>
+                    <div class="code-block">
+                        <h4>Python ML Model</h4>
+                        <pre><code>def predict_sentiment(text):
+    # Preprocess text
+    cleaned_text = preprocess_text(text)
+
+    # Vectorize
+    vectorized = vectorizer.transform([cleaned_text])
+
+    # Predict
+    prediction = model.predict(vectorized)[0]
+    probability = model.predict_proba(vectorized)[0]
+
+    return {
+        'sentiment': 'positive' if prediction == 1 else 'negative',
+        'confidence': float(max(probability))
+    }</code></pre>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Case Studies Section -->
+        <section class="section">
+            <h2>Success Stories</h2>
+            <p class="section-intro">Real-world impact through innovative technology solutions</p>
+
+            <div class="case-studies-grid">
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <div class="case-study-flag">🇺🇸</div>
+                        <h3>FinTech Revolution - New York</h3>
+                        <span class="case-study-industry">Financial Services</span>
+                    </div>
+                    <p class="case-study-challenge">A leading investment bank needed a real-time trading platform capable of handling millions of transactions per second with zero downtime.</p>
+                    <p class="case-study-solution">Built a distributed microservices architecture using Kubernetes, Go, and Apache Kafka, with AI-powered fraud detection.</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <strong>500M+</strong> Daily Transactions
+                        </div>
+                        <div class="result-item">
+                            <strong>99.999%</strong> Uptime
+                        </div>
+                        <div class="result-item">
+                            <strong>$2.1B</strong> Annual Savings
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <div class="case-study-flag">🇬🇧</div>
+                        <h3>Healthcare Digital Transformation - London</h3>
+                        <span class="case-study-industry">Healthcare</span>
+                    </div>
+                    <p class="case-study-challenge">NHS hospital network required a unified patient management system compliant with GDPR and HIPAA regulations.</p>
+                    <p class="case-study-solution">Developed a secure, cloud-native EHR system with blockchain-based data integrity and telemedicine capabilities.</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <strong>2M+</strong> Patient Records
+                        </div>
+                        <div class="result-item">
+                            <strong>40%</strong> Reduced Wait Times
+                        </div>
+                        <div class="result-item">
+                            <strong>£50M</strong> Cost Reduction
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <div class="case-study-flag">🇸🇬</div>
+                        <h3>E-commerce Scale-up - Singapore</h3>
+                        <span class="case-study-industry">Retail</span>
+                    </div>
+                    <p class="case-study-challenge">Regional e-commerce platform needed to scale from 100K to 10M+ users while maintaining sub-second response times.</p>
+                    <p class="case-study-solution">Implemented serverless architecture with global CDN, AI recommendation engine, and real-time inventory management.</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <strong>15M+</strong> Active Users
+                        </div>
+                        <div class="result-item">
+                            <strong>300%</strong> Revenue Growth
+                        </div>
+                        <div class="result-item">
+                            <strong>0.8s</strong> Avg Response Time
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <div class="case-study-flag">🇧🇷</div>
+                        <h3>AgriTech Innovation - São Paulo</h3>
+                        <span class="case-study-industry">Agriculture</span>
+                    </div>
+                    <p class="case-study-challenge">Agricultural cooperative needed IoT solution for precision farming across 500K hectares of farmland.</p>
+                    <p class="case-study-solution">Created IoT platform with satellite imagery analysis, predictive analytics, and mobile app for farmers.</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <strong>500K</strong> Hectares Monitored
+                        </div>
+                        <div class="result-item">
+                            <strong>35%</strong> Yield Increase
+                        </div>
+                        <div class="result-item">
+                            <strong>$120M</strong> Annual Value Added
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <div class="case-study-flag">🇩🇪</div>
+                        <h3>Manufacturing 4.0 - Munich</h3>
+                        <span class="case-study-industry">Manufacturing</span>
+                    </div>
+                    <p class="case-study-challenge">Global automotive manufacturer needed Industry 4.0 solution for predictive maintenance across 50 factories.</p>
+                    <p class="case-study-solution">Implemented AI-powered predictive maintenance system with IoT sensors, digital twins, and real-time analytics.</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <strong>45%</strong> Reduction in Downtime
+                        </div>
+                        <div class="result-item">
+                            <strong>€80M</strong> Annual Savings
+                        </div>
+                        <div class="result-item">
+                            <strong>60%</strong> Fewer Breakdowns
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <div class="case-study-flag">🇦🇺</div>
+                        <h3>EdTech Platform - Sydney</h3>
+                        <span class="case-study-industry">Education</span>
+                    </div>
+                    <p class="case-study-challenge">Online learning platform needed to scale to 1M+ students with personalized learning paths and real-time collaboration.</p>
+                    <p class="case-study-solution">Built microservices architecture with AI-driven personalization, video streaming, and interactive whiteboards.</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <strong>1.2M+</strong> Active Students
+                        </div>
+                        <div class="result-item">
+                            <strong>95%</strong> Course Completion Rate
+                        </div>
+                        <div class="result-item">
+                            <strong>A$150M</strong> Annual Revenue
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Create Something Amazing?</h2>
+                <p>Let's discuss your project and bring your vision to life with our proven expertise.</p>
+                <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+                <a href="services.html" class="btn btn-secondary">View Services</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Syndicate Developers</h3>
+                <p>Building the future, one line of code at a time.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/syndicate-developers" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/syndicatedev" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/syndicatedev" target="_blank" rel="noopener noreferrer" aria-label="Follow us on GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/syndicatedev" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/syndicatedev" target="_blank" rel="noopener noreferrer" aria-label="Like us on Facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html#web-development">Web Development</a></li>
+                    <li><a href="services.html#mobile-apps">Mobile Apps</a></li>
+                    <li><a href="services.html#ai-ml">AI & Machine Learning</a></li>
+                    <li><a href="services.html#cloud-services">Cloud Services</a></li>
+                    <li><a href="services.html#consulting">Consulting</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-envelope"></i> syndicatedev19@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Syndicate Developers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/chatbot.js"></script>
+
+    <!-- Chatbot Widget -->
+    <div class="chat-widget">
+        <button class="chat-button" id="chat-toggle" aria-label="Toggle chat window">
+            <i class="fas fa-comments"></i>
+            <span class="chat-badge" id="chat-badge" style="display:none;">1</span>
+        </button>
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <div>
+                    <h4>Syndicate Assistant</h4>
+                    <div class="chat-header-info">🟢 Online - Usually replies instantly</div>
+                </div>
+                <button class="chat-close" id="chat-close">✕</button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot">
+                    <div class="message-avatar">💬</div>
+                    <div class="message-content">
+                        <div class="message-bubble">Hi! 👋 I'm Davis from Syndicate Developers. How can I help you today?</div>
+                        <div class="message-author">Davis</div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input-field" placeholder="Ask me anything...">
+                <button id="chat-send" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

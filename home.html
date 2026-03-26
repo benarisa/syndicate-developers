@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Syndicate Developers - Professional team building innovative software solutions. Global presence with offices in 6 countries, serving clients worldwide with cutting-edge technology.">
+    <meta name="keywords" content="software development, web development, mobile apps, AI, cloud computing, enterprise solutions, global IT services">
+    <meta name="author" content="Syndicate Developers">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="geo.region" content="US-CA">
+    <meta name="geo.placename" content="San Francisco">
+    <meta name="ICBM" content="37.7749, -122.4194">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://syndicatedev.example/">
+    <meta property="og:title" content="Syndicate Developers - Global Software Solutions">
+    <meta property="og:description" content="Professional software development company with global presence. Expert in web, mobile, AI, and enterprise solutions.">
+    <meta property="og:image" content="https://syndicatedev.example/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://syndicatedev.example/">
+    <meta property="twitter:title" content="Syndicate Developers - Global Software Solutions">
+    <meta property="twitter:description" content="Professional software development company with global presence. Expert in web, mobile, AI, and enterprise solutions.">
+    <meta property="twitter:image" content="https://syndicatedev.example/images/twitter-image.jpg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Syndicate Developers",
+        "url": "https://syndicatedev.example",
+        "logo": "https://syndicatedev.example/images/logo.png",
+        "description": "Global software development company specializing in web applications, mobile apps, AI solutions, and enterprise systems.",
+        "foundingDate": "2015",
+        "numberOfEmployees": "50",
+        "address": [
+            {
+                "@type": "PostalAddress",
+                "addressCountry": "US",
+                "addressLocality": "San Francisco",
+                "addressRegion": "CA"
+            },
+            {
+                "@type": "PostalAddress",
+                "addressCountry": "GB",
+                "addressLocality": "London"
+            },
+            {
+                "@type": "PostalAddress",
+                "addressCountry": "KE",
+                "addressLocality": "Nairobi"
+            }
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+254-703-143-073",
+            "contactType": "customer service",
+            "availableLanguage": ["English", "Spanish", "French", "German", "Chinese", "Japanese", "Portuguese", "Arabic"],
+            "hoursAvailable": "24/7"
+        },
+        "sameAs": [
+            "https://github.com/benarisa",
+            "https://facebook.com/syndicates",
+            "https://t.me/syndicates"
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Software Development Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Web Development",
+                        "description": "Custom web applications built with modern technologies"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Mobile App Development",
+                        "description": "Native and cross-platform mobile applications"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Backend & API Development",
+                        "description": "Scalable backend infrastructure and RESTful APIs"
+                    }
+                }
+            ]
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "500",
+            "bestRating": "5",
+            "worstRating": "1"
+        }
+    }
+    </script>
+    
+    <title>Syndicate Developers - Global Software Solutions</title>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+    <link rel="preload" href="css/styles.css" as="style">
+    
+    <!-- external stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="sidebar-expanded">
+    <!-- Top white bar with title and slogan -->
+    <div class="top-bar" role="banner">
+        <div class="top-bar-inner">
+            <div class="top-title">Syndicate Developers</div>
+            <button id="top-offers-btn" class="btn btn-primary btn-offer-top btn-offer-large" onclick="document.getElementById('offers-modal').style.display='flex'; document.body.style.overflow='hidden';">
+                <i class="fas fa-star"></i> JOIN SYNDICATE COMMUNITY
+            </button>
+            <pre id="code-runner" class="top-code" aria-hidden="true"></pre>
+            <div class="top-controls">
+                <button id="hero-toggle" class="hero-toggle" aria-pressed="false" title="Pause or resume hero animations">Pause</button>
+            </div>
+        </div>
+    </div>
+    <!-- Skip to main content link for keyboard navigation -->
+    <a href="#home" class="skip-to-main">Skip to main content</a>
+    
+    <header>
+        <nav aria-label="Main navigation" class="ai-nav sidebar-nav expanded">
+            <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="true">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-brand">
+                <img src="images/logo.svg" alt="Syndicate Developers logo" class="site-logo">
+                <div class="logo-text">
+                    <span class="brand-name">Syndicate Developers</span>
+                    <div class="trust-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Trusted</span>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-controls">
+                <ul class="nav-list">
+                    <li>
+                        <a href="home.html" class="nav-link active" aria-current="page">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-link">
+                            <i class="fas fa-users"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.html" class="nav-link">
+                            <i class="fas fa-cogs"></i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html" class="nav-link">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Portfolio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-link cta-nav">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Get Quote</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="language-selector">
+                    <select id="language-select" onchange="changeLanguage()" aria-label="Select language">
+                        <option value="en">🇺🇸 English</option>
+                        <option value="es">🇪🇸 Español</option>
+                        <option value="fr">🇫🇷 Français</option>
+                        <option value="de">🇩🇪 Deutsch</option>
+                        <option value="zh">🇨🇳 中文</option>
+                        <option value="ja">🇯🇵 日本語</option>
+                        <option value="pt">🇧🇷 Português</option>
+                        <option value="ar">🇸🇦 العربية</option>
+                    </select>
+                </div>
+                <div class="nav-status">
+                    <div class="status-indicator online">
+                        <i class="fas fa-circle"></i>
+                        <span>Online</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-media" aria-hidden="true">
+                <div class="slideshow">
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600&auto=format&q=60&fit=crop');"></div>
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1600&auto=format&q=60&fit=crop');"></div>
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&auto=format&q=60&fit=crop');"></div>
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&auto=format&q=60&fit=crop');"></div>
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');"></div>
+                </div>
+                <div class="hero-overlay"></div>
+                <!-- Background code stream (subtle) -->
+                <div class="hero-code" aria-hidden="true">
+                    <div class="hero-code-lines" aria-hidden="true"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <h1>Syndicate Developers</h1>
+                <p>Expert software solutions tailored to your business needs</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                    <a href="portfolio.html" class="btn btn-secondary">View Portfolio</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Well-Experienced Developer Showcase -->
+        <section class="developer-showcase">
+            <div class="showcase-container">
+                <h2>What Does a Well-Experienced Developer Look Like?</h2>
+                <p class="showcase-subtitle">Meet our elite team of seasoned professionals</p>
+                
+                <div class="carousel-wrapper">
+                    <div class="carousel-container">
+                        <img class="carousel-image active" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop" alt="Senior Developer 1" loading="lazy">
+                        <img class="carousel-image" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&h=600&fit=crop" alt="Senior Developer 2" loading="lazy">
+                        <img class="carousel-image" src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&h=600&fit=crop" alt="Senior Developer 3" loading="lazy">
+                        <img class="carousel-image" src="https://images.unsplash.com/photo-1541101767792-0e1df4d8c40f?w=600&h=600&fit=crop" alt="Senior Developer 4" loading="lazy">
+                        <img class="carousel-image" src="https://images.unsplash.com/photo-1506629082632-33c46cb3db51?w=600&h=600&fit=crop" alt="Senior Developer 5" loading="lazy">
+                        <img class="carousel-image" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop" alt="Senior Developer 6" loading="lazy">
+                        <img class="carousel-image" src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=600&h=600&fit=crop" alt="Senior Developer 7" loading="lazy">
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="currentSlide(0)"></span>
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                    </div>
+                </div>
+                
+                <div class="dev-traits">
+                    <div class="trait">
+                        <i class="fas fa-brain"></i>
+                        <h4>Problem Solver</h4>
+                        <p>Strategic thinking & innovative solutions</p>
+                    </div>
+                    <div class="trait">
+                        <i class="fas fa-rocket"></i>
+                        <h4>Performance Expert</h4>
+                        <p>Optimized code & scalable architecture</p>
+                    </div>
+                    <div class="trait">
+                        <i class="fas fa-handshake"></i>
+                        <h4>Team Player</h4>
+                        <p>Collaboration & knowledge sharing</p>
+                    </div>
+                    <div class="trait">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>Continuous Learner</h4>
+                        <p>Always mastering new technologies</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>Expert Software Development</h2>
+            <p>We are a collective of passionate developers building innovative, scalable, and user-friendly applications that solve real-world business problems. With 8+ years of experience and 50+ successful projects, we deliver cutting-edge solutions using modern technologies.</p>
+            <div class="stats">
+                <div class="stat"><strong>50+</strong> Projects Completed</div>
+                <div class="stat"><strong>8+</strong> Years Experience</div>
+                <div class="stat"><strong>30+</strong> Satisfied Clients</div>
+                <div class="stat"><strong>99.9%</strong> Uptime SLA</div>
+            </div>
+            <div class="cta-buttons">
+                <a href="about.html" class="btn btn-secondary">Learn More About Us</a>
+                <a href="portfolio.html" class="btn btn-primary">View Our Work</a>
+            </div>
+        </section>
+
+        <section id="global-presence" class="section">
+            <h2>Global Presence</h2>
+            <p class="section-intro">Serving clients worldwide with local expertise and global standards</p>
+
+            <div class="global-stats">
+                <div class="global-stat">
+                    <h3>25+</h3>
+                    <p>Countries Served</p>
+                </div>
+                <div class="global-stat">
+                    <h3>6</h3>
+                    <p>Global Offices</p>
+                </div>
+                <div class="global-stat">
+                    <h3>12</h3>
+                    <p>Time Zones</p>
+                </div>
+                <div class="global-stat">
+                    <h3>99.9%</h3>
+                    <p>Uptime SLA</p>
+                </div>
+            </div>
+
+            <div class="offices-preview">
+                <div class="office-preview">
+                    <span class="flag">🇺🇸</span> San Francisco • 🇬🇧 London • 🇰🇪 Nairobi • 🇸🇬 Singapore • 🇦🇺 Sydney • 🇧🇷 São Paulo
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="about.html" class="btn btn-secondary">Learn About Our Global Team</a>
+            </div>
+        </section>
+
+        <section id="case-studies" class="section">
+            <h2>Global Success Stories</h2>
+            <p class="section-intro">Transforming businesses across continents with innovative solutions</p>
+            
+            <div class="case-studies-grid">
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <div class="case-study-flag">🇺🇸</div>
+                        <h3>FinTech Revolution - New York</h3>
+                        <span class="case-study-industry">Financial Services</span>
+                    </div>
+                    <p class="case-study-challenge">A leading investment bank needed a real-time trading platform capable of handling millions of transactions per second with zero downtime.</p>
+                    <p class="case-study-solution">Built a distributed microservices architecture using Kubernetes, Go, and Apache Kafka, with AI-powered fraud detection.</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <strong>500M+</strong> Daily Transactions
+                        </div>
+                        <div class="result-item">
+                            <strong>99.999%</strong> Uptime
+                        </div>
+                        <div class="result-item">
+                            <strong>$2.1B</strong> Annual Savings
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <div class="case-study-flag">🇬🇧</div>
+                        <h3>Healthcare Digital Transformation - London</h3>
+                        <span class="case-study-industry">Healthcare</span>
+                    </div>
+                    <p class="case-study-challenge">NHS hospital network required a unified patient management system compliant with GDPR and HIPAA regulations.</p>
+                    <p class="case-study-solution">Developed a secure, cloud-native EHR system with blockchain-based data integrity and telemedicine capabilities.</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <strong>2M+</strong> Patient Records
+                        </div>
+                        <div class="result-item">
+                            <strong>40%</strong> Reduced Wait Times
+                        </div>
+                        <div class="result-item">
+                            <strong>£50M</strong> Cost Reduction
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <div class="case-study-flag">🇸🇬</div>
+                        <h3>E-commerce Scale-up - Singapore</h3>
+                        <span class="case-study-industry">Retail</span>
+                    </div>
+                    <p class="case-study-challenge">Regional e-commerce platform needed to scale from 100K to 10M+ users while maintaining sub-second response times.</p>
+                    <p class="case-study-solution">Implemented serverless architecture with global CDN, AI recommendation engine, and real-time inventory management.</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <strong>15M+</strong> Active Users
+                        </div>
+                        <div class="result-item">
+                            <strong>300%</strong> Revenue Growth
+                        </div>
+                        <div class="result-item">
+                            <strong>0.8s</strong> Avg Response Time
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <div class="case-study-flag">🇧🇷</div>
+                        <h3>AgriTech Innovation - São Paulo</h3>
+                        <span class="case-study-industry">Agriculture</span>
+                    </div>
+                    <p class="case-study-challenge">Agricultural cooperative needed IoT solution for precision farming across 500K hectares of farmland.</p>
+                    <p class="case-study-solution">Created IoT platform with satellite imagery analysis, predictive analytics, and mobile app for farmers.</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <strong>500K</strong> Hectares Monitored
+                        </div>
+                        <div class="result-item">
+                            <strong>35%</strong> Yield Increase
+                        </div>
+                        <div class="result-item">
+                            <strong>$120M</strong> Annual Value Added
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section">
+            <h2>Latest Insights & News</h2>
+            <p class="section-intro">Stay updated with the latest trends, insights, and innovations in software development</p>
+            
+            <div class="blog-grid">
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop" alt="AI and machine learning technologies in software development" loading="lazy" class="blog-image">
+                        <div class="blog-category">AI & ML</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>The Future of AI in Enterprise Software Development</h3>
+                        <div class="blog-meta">
+                            <span class="author">By Alifam Murithi</span>
+                            <span class="date">March 5, 2026</span>
+                            <span class="read-time">5 min read</span>
+                        </div>
+                        <p>Artificial Intelligence is revolutionizing how we build software. From automated code generation to intelligent testing, AI tools are becoming indispensable in modern development workflows. Learn how leading companies are integrating AI to accelerate development cycles and improve code quality.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=250&fit=crop" alt="Cloud Architecture">
+                        <div class="blog-category">Cloud</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Building Scalable Cloud Architectures for Global Enterprises</h3>
+                        <div class="blog-meta">
+                            <span class="author">By Tobias Asitiba</span>
+                            <span class="date">February 28, 2026</span>
+                            <span class="read-time">7 min read</span>
+                        </div>
+                        <p>As businesses expand globally, cloud architecture becomes crucial for maintaining performance and reliability. This comprehensive guide explores best practices for designing cloud-native applications that can scale across multiple regions while ensuring data sovereignty and compliance.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=250&fit=crop" alt="Mobile Development">
+                        <div class="blog-category">Mobile</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Cross-Platform Mobile Development: Flutter vs React Native</h3>
+                        <div class="blog-meta">
+                            <span class="author">By Benaresa Arisa</span>
+                            <span class="date">February 20, 2026</span>
+                            <span class="read-time">6 min read</span>
+                        </div>
+                        <p>Choosing the right framework for cross-platform mobile development can make or break your project. We compare Flutter and React Native across performance, developer experience, community support, and real-world use cases to help you make an informed decision.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop" alt="DevOps">
+                        <div class="blog-category">DevOps</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>DevOps Best Practices for High-Performance Teams</h3>
+                        <div class="blog-meta">
+                            <span class="author">By Sylous (OCS)</span>
+                            <span class="date">February 15, 2026</span>
+                            <span class="read-time">8 min read</span>
+                        </div>
+                        <p>Effective DevOps practices can significantly improve deployment frequency and reduce failure rates. This article covers essential tools, cultural changes, and automation strategies that successful development teams implement to achieve continuous delivery excellence.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Security">
+                        <div class="blog-category">Security</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Implementing Zero-Trust Security in Modern Applications</h3>
+                        <div class="blog-meta">
+                            <span class="author">By Davis</span>
+                            <span class="date">February 10, 2026</span>
+                            <span class="read-time">6 min read</span>
+                        </div>
+                        <p>Traditional perimeter-based security is no longer sufficient. Learn how to implement zero-trust architecture principles in your applications, ensuring that every access request is verified and authenticated, regardless of location or network.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Blockchain">
+                        <div class="blog-category">Blockchain</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Blockchain Beyond Cryptocurrency: Enterprise Applications</h3>
+                        <div class="blog-meta">
+                            <span class="author">By Syndicate Team</span>
+                            <span class="date">February 5, 2026</span>
+                            <span class="read-time">7 min read</span>
+                        </div>
+                        <p>Blockchain technology offers far more than just cryptocurrency. Discover how enterprises are leveraging distributed ledger technology for supply chain transparency, secure document management, and decentralized identity solutions.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="blog-cta">
+                <h3>Want to Stay Updated?</h3>
+                <p>Subscribe to our newsletter for the latest insights and industry trends.</p>
+                <form class="newsletter-form" onsubmit="handleUniversalFormSubmit(event, 'newsletter');">
+                    <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <p class="section-intro">Comprehensive software solutions from concept to deployment</p>
+
+            <div class="services-overview">
+                <div class="service-highlight">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Modern web applications with React, Node.js, and cloud technologies</p>
+                </div>
+                <div class="service-highlight">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Apps</h3>
+                    <p>Native and cross-platform apps for iOS and Android</p>
+                </div>
+                <div class="service-highlight">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Intelligent solutions powered by cutting-edge AI technologies</p>
+                </div>
+                <div class="service-highlight">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Services</h3>
+                    <p>Scalable infrastructure and DevOps solutions</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="services.html" class="btn btn-primary">View All Services</a>
+                <a href="portfolio.html" class="btn btn-secondary">See Our Work</a>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Our Portfolio</h2>
+            <p class="section-intro">Showcasing innovation through successful projects and satisfied clients</p>
+
+            <div class="portfolio-preview">
+                <div class="project-preview">
+                    <div class="project-badge">Web</div>
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=300&h=200&fit=crop" alt="Project Alpha Screenshot" class="project-image">
+                    <h3>Project Alpha</h3>
+                    <p>Task management web app with 25,000+ users</p>
+                </div>
+                <div class="project-preview">
+                    <div class="project-badge">Mobile</div>
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=300&h=200&fit=crop" alt="Project Beta Screenshot" class="project-image">
+                    <h3>Project Beta</h3>
+                    <p>E-commerce mobile app with 75,000+ downloads</p>
+                </div>
+                <div class="project-preview">
+                    <div class="project-badge">AI</div>
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=200&fit=crop" alt="Project Delta Screenshot" class="project-image">
+                    <h3>Project Delta</h3>
+                    <p>AI chatbot with 94% accuracy and 12 languages</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="portfolio.html" class="btn btn-primary">View Full Portfolio</a>
+            </div>
+        </section>
+
+        <!-- Get Offers Section -->
+        <section id="offers" class="offers-section">
+            <div class="offers-container">
+                <div class="offers-content">
+                    <h2>Exclusive Client Offers</h2>
+                    <p>Get personalized software development offers tailored to your needs and educational background</p>
+                    <button id="open-offers-btn" class="btn btn-primary btn-large">
+                        <i class="fas fa-gift"></i> Get Your Offer
+                    </button>
+                </div>
+                <div class="offers-benefits">
+                    <div class="benefit">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Personalized Quotes</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-check-circle"></i>
+                        <span>PDF Certificate</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Syndicate Stamp</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offers Modal -->
+        <div id="offers-modal" class="modal-overlay" style="display:none;">
+            <div class="modal-content offers-modal">
+                <button class="modal-close" id="close-offers-modal" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h2>Apply for Exclusive Offers</h2>
+                <p class="modal-subtitle">Tell us about yourself to receive personalized software development offers</p>
+                
+                <!-- 2-Year Validity Banner -->
+                <div style="background: linear-gradient(135deg, #27ae60 0%, #229954 100%); color: #fff; padding: 12px; border-radius: 6px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 500;">
+                    <i class="fas fa-check-circle" style="font-size: 18px; flex-shrink: 0;"></i>
+                    <span><strong>Valid for 2 Years</strong> from your submission date</span>
+                </div>
+                
+                <form id="offers-form" action="https://formspree.io/f/xyknzbnq" method="POST" onsubmit="handleOffersSubmit(event)">
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label for="offer-name">Full Name <span aria-label="required">*</span></label>
+                        <input type="text" id="offer-name" name="fullName" placeholder="John Doe" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="offer-email">Email Address <span aria-label="required">*</span></label>
+                        <input type="email" id="offer-email" name="email" placeholder="john@example.com" required>
+                    </div>
+
+                    <!-- Education Level -->
+                    <div class="form-group">
+                        <label for="education-level">Education Level <span aria-label="required">*</span></label>
+                        <select id="education-level" name="educationLevel" required>
+                            <option value="">-- Select Your Education Level --</option>
+                            <option value="high-school">High School</option>
+                            <option value="diploma">Diploma/Certificate</option>
+                            <option value="bachelor">Bachelor's Degree</option>
+                            <option value="master">Master's Degree</option>
+                            <option value="phd">PhD/Doctorate</option>
+                            <option value="self-taught">Self-Taught</option>
+                            <option value="bootcamp">Coding Bootcamp</option>
+                        </select>
+                    </div>
+
+                    <!-- Required Statements (Checkboxes) -->
+                    <div class="form-group">
+                        <label>Select Applicable Offers <span aria-label="required">*</span></label>
+                        <div class="checkboxes-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="offer-web" name="offers" value="Web Development" required>
+                                <label for="offer-web">
+                                    <strong>Web Development</strong>
+                                    <span>Custom websites & applications</span>
+                                </label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="offer-mobile" name="offers" value="Mobile Apps">
+                                <label for="offer-mobile">
+                                    <strong>Mobile Apps</strong>
+                                    <span>iOS & Android development</span>
+                                </label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="offer-backend" name="offers" value="Backend APIs">
+                                <label for="offer-backend">
+                                    <strong>Backend APIs</strong>
+                                    <span>Scalable server infrastructure</span>
+                                </label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="offer-ai" name="offers" value="AI Solutions">
+                                <label for="offer-ai">
+                                    <strong>AI Solutions</strong>
+                                    <span>Machine learning & automation</span>
+                                </label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="offer-consulting" name="offers" value="Consulting">
+                                <label for="offer-consulting">
+                                    <strong>Consulting</strong>
+                                    <span>Strategy & architecture advice</span>
+                                </label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="offer-cloud" name="offers" value="Cloud Services">
+                                <label for="offer-cloud">
+                                    <strong>Cloud Services</strong>
+                                    <span>AWS, Azure, GCP deployment</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Info -->
+                    <div class="form-group">
+                        <label for="offer-company">Company/Organization (Optional)</label>
+                        <input type="text" id="offer-company" name="company" placeholder="Your company">
+                    </div>
+
+                    <!-- Phone (Optional) -->
+                    <div class="form-group">
+                        <label for="offer-phone">Phone Number (Optional)</label>
+                        <input type="tel" id="offer-phone" name="phone" placeholder="+1 (555) 123-4567">
+                    </div>
+
+                    <!-- Agreement Checkbox -->
+                    <div class="form-group checkbox-agreement">
+                        <input type="checkbox" id="agree-terms" name="agree" required>
+                        <label for="agree-terms">
+                            I agree to receive personalized offers and updates from Syndicate Developers
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Submit
+                    </button>
+                    <p class="form-note">
+                        <i class="fas fa-lock"></i> Your information is secure and will never be shared
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <section id="contact" class="contact-section">
+            <h2>Get Your Project Started</h2>
+            <div class="availability-badge">
+                <i class="fas fa-clock"></i> Available 24/7
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>How to Reach Us</h3>
+                    <p><strong>Email:</strong> <a href="mailto:syndicatedev19@gmail.com">syndicatedev19@gmail.com</a></p>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/0703143073" target="_blank">+254 703 143 073</a></p>
+                    <p><strong>Support:</strong> 24/7 Customer Support</p>
+                    <p class="support-text">We're always available to discuss your project, respond to queries, and provide emergency support.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/benarisa" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://facebook.com/syndicates" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://t.me/syndicates" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://wa.me/0703143073" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form" onsubmit="handleUniversalFormSubmit(event, 'contact');" aria-describedby="form-description">
+                    <h3>Send us a Message</h3>
+                    <p id="form-description">Fill out this form and we'll get back to you within 2 hours with a personalized quote.</p>
+                    <label for="name">Name <span aria-label="required">*</span></label>
+                    <input type="text" id="name" name="name" aria-required="true" required>
+                    
+                    <label for="email">Email <span aria-label="required">*</span></label>
+                    <input type="email" id="email" name="email" aria-required="true" required>
+                    
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company">
+                    
+                    <label for="project-type">Project Type</label>
+                    <select id="project-type" name="project-type">
+                        <option value="">Select...</option>
+                        <option value="web">Web Application</option>
+                        <option value="mobile">Mobile App</option>
+                        <option value="backend">Backend/API</option>
+                        <option value="consulting">Consulting</option>
+                        <option value="emergency">Emergency Support</option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                    <label for="message">Tell us about your project *</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit" class="btn btn-primary">Request a Quote</button>
+                    <p class="form-note"><i class="fas fa-info-circle"></i> We'll respond within 2 hours • Secure form powered by Formspree</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+        <section id="testimonials" class="section testimonials-section">
+            <h2>Trusted by Leading Companies</h2>
+            <p class="testimonials-intro">Real feedback from our satisfied clients worldwide</p>
+            
+            <div class="clients-logos">
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/120x60?text=TechCorp" alt="TechCorp Inc">
+                </div>
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/120x60?text=Global+Solutions" alt="Global Solutions Ltd">
+                </div>
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/120x60?text=StartupHub" alt="StartupHub">
+                </div>
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/120x60?text=Enterprise+Co" alt="Enterprise Co">
+                </div>
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/120x60?text=Digital+Minds" alt="Digital Minds">
+                </div>
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/120x60?text=Cloud+Systems" alt="Cloud Systems">
+                </div>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Syndicate Developers transformed our vision into a world-class platform. Their attention to detail and technical expertise are unmatched. The team delivered on time and exceeded our expectations."</p>
+                    <div class="testimonial-author">
+                        <h4>Sarah Johnson</h4>
+                        <p>CTO, TechCorp Inc</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Working with Syndicate was a game-changer for our startup. Their full-stack expertise and 24/7 support made scaling our application seamless. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <h4>Michael Chen</h4>
+                        <p>Founder & CEO, StartupHub</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The developers at Syndicate are true professionals. They understood our complex requirements and delivered a robust solution that improved our operations by 40%. Outstanding work!"</p>
+                    <div class="testimonial-author">
+                        <h4>Dr. Amelia Rodriguez</h4>
+                        <p>Operations Director, Global Solutions Ltd</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"We've worked with several development teams, but Syndicate stands out. Their communication, code quality, and commitment to excellence are exceptional. Worth every penny!"</p>
+                    <div class="testimonial-author">
+                        <h4>James Wilson</h4>
+                        <p>Product Manager, Enterprise Co</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Syndicate delivered our mobile app ahead of schedule. The quality, performance, and attention to user experience are beyond what we expected. Definitely our go-to team for future projects!"</p>
+                    <div class="testimonial-author">
+                        <h4>Lisa Zhang</h4>
+                        <p>VP Engineering, Digital Minds</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Their 24/7 support saved us during critical production issues. Responsive, knowledgeable, and genuinely invested in our success. A partnership we truly value."</p>
+                    <div class="testimonial-author">
+                        <h4>David Thompson</h4>
+                        <p>IT Director, Cloud Systems</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-extended">
+                <div class="stat-item">
+                    <h3>4.9/5</h3>
+                    <p>Average Rating</p>
+                </div>
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <h3>98%</h3>
+                    <p>Recommendation Rate</p>
+                </div>
+            </div>
+
+            <div class="review-submission">
+                <h3>Share Your Experience</h3>
+                <p>Have you worked with us? We'd love to hear from you!</p>
+                <form id="review-form" class="review-form" onsubmit="handleUniversalFormSubmit(event, 'review');" aria-describedby="review-description">
+                    <input type="hidden" id="review-subject" name="_subject" value="New Review Submission">
+                    <p id="review-description">Share your experience working with Syndicate Developers. Your feedback helps us improve.</p>
+                    <div class="form-group">
+                        <label for="review-name">Your Name <span aria-label="required">*</span></label>
+                        <input type="text" id="review-name" name="review-name" aria-required="true" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="review-company">Company/Role *</label>
+                        <input type="text" id="review-company" name="review-company" placeholder="e.g., CTO at TechCorp" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="review-rating">Your Rating *</label>
+                        <div class="star-rating">
+                            <input type="hidden" id="review-rating" name="review-rating" value="5">
+                            <div class="stars">
+                                <span class="star" data-value="1"><i class="fas fa-star"></i></span>
+                                <span class="star" data-value="2"><i class="fas fa-star"></i></span>
+                                <span class="star" data-value="3"><i class="fas fa-star"></i></span>
+                                <span class="star" data-value="4"><i class="fas fa-star"></i></span>
+                                <span class="star" data-value="5"><i class="fas fa-star"></i></span>
+                            </div>
+                            <span class="rating-text">Excellent</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="review-text">Your Review *</label>
+                        <textarea id="review-text" name="review-text" rows="4" placeholder="Tell us about your experience with Syndicate..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit Review</button>
+                    <p class="form-note"><i class="fas fa-info-circle"></i> Your feedback helps us improve • Secure submission</p>
+                </form>
+            </div>
+        </section>
+
+        <section id="careers" class="section">
+            <h2>Join Our Team</h2>
+            <p class="section-intro">We're looking for passionate developers, designers, and innovators to help us build the future</p>
+            
+            <div class="careers-intro">
+                <div class="career-highlight">
+                    <i class="fas fa-heart"></i>
+                    <h3>Why Work With Us</h3>
+                    <p>Join a globally distributed team of talented professionals working on cutting-edge projects that impact millions of users worldwide.</p>
+                </div>
+                <div class="career-highlight">
+                    <i class="fas fa-globe"></i>
+                    <h3>Work Globally</h3>
+                    <p>We have offices in 6 countries and support remote work, giving you flexibility to work from anywhere in the world.</p>
+                </div>
+                <div class="career-highlight">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Continuous Learning</h3>
+                    <p>Access to training budgets, mentorship programs, and industry conferences to keep your skills sharp and growing.</p>
+                </div>
+            </div>
+
+            <h3 style="text-align: center; margin-top: 3rem; margin-bottom: 2rem;">Open Positions</h3>
+            <div class="job-listings">
+                <div class="job-card">
+                    <div class="job-header">
+                        <h4>Senior Full-Stack Developer</h4>
+                        <span class="job-location"><i class="fas fa-map-marker-alt"></i> San Francisco, USA / Remote</span>
+                    </div>
+                    <p class="job-description">We're looking for an experienced full-stack developer with expertise in React, Node.js, and cloud architecture to lead our innovation team.</p>
+                    <div class="job-details">
+                        <div class="detail">
+                            <strong>Experience:</strong> 5+ years
+                        </div>
+                        <div class="detail">
+                            <strong>Salary Range:</strong> $120K - $160K
+                        </div>
+                        <div class="detail">
+                            <strong>Type:</strong> Full-time
+                        </div>
+                    </div>
+                    <div class="job-requirements">
+                        <strong>Key Requirements:</strong>
+                        <ul>
+                            <li>Proficiency in React, Node.js, and PostgreSQL</li>
+                            <li>Experience with AWS or Google Cloud</li>
+                            <li>Strong system design and architecture skills</li>
+                            <li>Team leadership experience</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-apply" onclick="applyJob('Senior Full-Stack Developer')">Apply Now</button>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <h4>Mobile App Developer (Flutter)</h4>
+                        <span class="job-location"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya / Remote</span>
+                    </div>
+                    <p class="job-description">Build high-performance mobile applications for iOS and Android using Flutter. You'll work on products used by millions of users.</p>
+                    <div class="job-details">
+                        <div class="detail">
+                            <strong>Experience:</strong> 3+ years
+                        </div>
+                        <div class="detail">
+                            <strong>Salary Range:</strong> $70K - $100K
+                        </div>
+                        <div class="detail">
+                            <strong>Type:</strong> Full-time
+                        </div>
+                    </div>
+                    <div class="job-requirements">
+                        <strong>Key Requirements:</strong>
+                        <ul>
+                            <li>Expert-level Flutter development skills</li>
+                            <li>Experience with Firebase and cloud services</li>
+                            <li>Published apps on Google Play or App Store</li>
+                            <li>Understanding of mobile UI/UX principles</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-apply" onclick="applyJob('Mobile App Developer (Flutter)')">Apply Now</button>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <h4>DevOps & Infrastructure Engineer</h4>
+                        <span class="job-location"><i class="fas fa-map-marker-alt"></i> London, UK / Remote</span>
+                    </div>
+                    <p class="job-description">Design and maintain our global infrastructure, ensuring reliability, security, and optimized performance across all systems.</p>
+                    <div class="job-details">
+                        <div class="detail">
+                            <strong>Experience:</strong> 4+ years
+                        </div>
+                        <div class="detail">
+                            <strong>Salary Range:</strong> $90K - $130K
+                        </div>
+                        <div class="detail">
+                            <strong>Type:</strong> Full-time
+                        </div>
+                    </div>
+                    <div class="job-requirements">
+                        <strong>Key Requirements:</strong>
+                        <ul>
+                            <li>Strong Kubernetes and Docker expertise</li>
+                            <li>AWS or GCP certification preferred</li>
+                            <li>CI/CD pipeline development experience</li>
+                            <li>Security and compliance knowledge</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-apply" onclick="applyJob('DevOps & Infrastructure Engineer')">Apply Now</button>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <h4>UI/UX Designer</h4>
+                        <span class="job-location"><i class="fas fa-map-marker-alt"></i> Singapore / Remote</span>
+                    </div>
+                    <p class="job-description">Create beautiful and intuitive user experiences for web and mobile applications used by millions worldwide.</p>
+                    <div class="job-details">
+                        <div class="detail">
+                            <strong>Experience:</strong> 3+ years
+                        </div>
+                        <div class="detail">
+                            <strong>Salary Range:</strong> $60K - $90K
+                        </div>
+                        <div class="detail">
+                            <strong>Type:</strong> Full-time
+                        </div>
+                    </div>
+                    <div class="job-requirements">
+                        <strong>Key Requirements:</strong>
+                        <ul>
+                            <li>Proficiency in Figma and design tools</li>
+                            <li>Strong portfolio of completed projects</li>
+                            <li>Understanding of web and mobile design best practices</li>
+                            <li>Excellent communication skills</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-apply" onclick="applyJob('UI/UX Designer')">Apply Now</button>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <h4>Backend Engineer (Python/Django)</h4>
+                        <span class="job-location"><i class="fas fa-map-marker-alt"></i> Sydney, Australia / Remote</span>
+                    </div>
+                    <p class="job-description">Build scalable backend systems and APIs that power our enterprise solutions and SaaS platforms.</p>
+                    <div class="job-details">
+                        <div class="detail">
+                            <strong>Experience:</strong> 3+ years
+                        </div>
+                        <div class="detail">
+                            <strong>Salary Range:</strong> $80K - $120K
+                        </div>
+                        <div class="detail">
+                            <strong>Type:</strong> Full-time
+                        </div>
+                    </div>
+                    <div class="job-requirements">
+                        <strong>Key Requirements:</strong>
+                        <ul>
+                            <li>Advanced Python and Django expertise</li>
+                            <li>PostgreSQL and database design knowledge</li>
+                            <li>REST API development experience</li>
+                            <li>AWS deployment experience</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-apply" onclick="applyJob('Backend Engineer (Python/Django)')">Apply Now</button>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <h4>Junior Web Developer</h4>
+                        <span class="job-location"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya / Remote</span>
+                    </div>
+                    <p class="job-description">Start your career with us! We mentor junior developers and provide hands-on experience with modern web technologies.</p>
+                    <div class="job-details">
+                        <div class="detail">
+                            <strong>Experience:</strong> 0-2 years
+                        </div>
+                        <div class="detail">
+                            <strong>Salary Range:</strong> $25K - $45K
+                        </div>
+                        <div class="detail">
+                            <strong>Type:</strong> Full-time
+                        </div>
+                    </div>
+                    <div class="job-requirements">
+                        <strong>Key Requirements:</strong>
+                        <ul>
+                            <li>Solid HTML, CSS, and JavaScript fundamentals</li>
+                            <li>Willingness to learn and grow</li>
+                            <li>Problem-solving mindset</li>
+                            <li>Portfolio or GitHub projects</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-apply" onclick="applyJob('Junior Web Developer')">Apply Now</button>
+                </div>
+            </div>
+
+            <div class="career-benefits">
+                <h3>What We Offer</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h4>Competitive Salary</h4>
+                        <p>Market-competitive compensation with annual reviews</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-heartbeat"></i>
+                        <h4>Health Benefits</h4>
+                        <p>Comprehensive health, dental, and vision coverage</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h4>Flexible PTO</h4>
+                        <p>Unlimited paid time off (truly unlimited)</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-laptop-home"></i>
+                        <h4>Remote First</h4>
+                        <p>Work from anywhere with optional office access</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-book"></i>
+                        <h4>Learning Budget</h4>
+                        <p>$2,000 annual budget for courses, conferences, books</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-rocket"></i>
+                        <h4>Career Growth</h4>
+                        <p>Clear pathways for promotion and leadership roles</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-users"></i>
+                        <h4>Mentorship</h4>
+                        <p>1-on-1 mentoring and professional development</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-beer"></i>
+                        <h4>Team Culture</h4>
+                        <p>Regular team events, hackathons, and celebrations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="support-section">
+            <h2>Always Here When You Need Us</h2>
+            <p>24/7 availability means we're working around the clock for you</p>
+            <div class="support-grid">
+                <div class="support-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support for your peace of mind.</p>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Quick Response Time</h3>
+                    <p>Response within 2 hours, even during nights and weekends.</p>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h3>Emergency Support</h3>
+                    <p>Critical issues handled immediately by our senior team.</p>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>SLA Guarantee</h3>
+                    <p>99.9% uptime SLA on all production systems.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to Build Something Great?</h2>
+            <p>Let's discuss your project and create something amazing together.</p>
+            <a href="#contact" class="btn btn-primary">Get Started Today</a>
+        </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Syndicate Developers</h4>
+                <p>We build digital solutions for innovative businesses.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: syndicatedev19@gmail.com<br>WhatsApp: +254 703 143 073</p>
+                <div class="social-links">
+                    <a href="https://github.com/benarisa" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://facebook.com/syndicates" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://t.me/syndicates" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    <a href="https://wa.me/0703143073" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Syndicate Developers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/pdf-generator.js"></script>
+    
+    <!-- jsPDF Library for PDF Generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX'); // Replace with your Google Analytics ID
+    </script>
+
+    <!-- Chatbot Widget -->
+    <div class="chat-widget">
+        <button class="chat-button" id="chat-toggle" aria-label="Toggle chat window">
+            <i class="fas fa-comments"></i>
+            <span class="chat-badge" id="chat-badge" style="display:none;">1</span>
+        </button>
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <div>
+                    <h4>Syndicate Assistant</h4>
+                    <div class="chat-header-info">🟢 Online - Usually replies instantly</div>
+                </div>
+                <button class="chat-close" id="chat-close">✕</button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot">
+                    <div class="message-avatar">💬</div>
+                    <div class="message-content">
+                        <div class="message-bubble">Hi! 👋 I'm Davis from Syndicate Developers. How can I help you today?</div>
+                        <div class="message-author">Davis</div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input-field" placeholder="Ask me anything...">
+                <button id="chat-send" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

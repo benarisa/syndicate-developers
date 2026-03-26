@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Syndicate Developers - Professional team building innovative software solutions. Learn about our expertise, certifications, and global presence.">
+    <meta name="keywords" content="software development, about us, team, expertise, certifications, global presence">
+    <meta name="author" content="Syndicate Developers">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="geo.region" content="US-CA">
+    <meta name="geo.placename" content="San Francisco">
+    <meta name="ICBM" content="37.7749, -122.4194">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://syndicatedev.example/about/">
+    <meta property="og:title" content="About Syndicate Developers - Global Software Solutions">
+    <meta property="og:description" content="Learn about our expert team, certifications, and global presence in software development.">
+    <meta property="og:image" content="https://syndicatedev.example/images/about-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://syndicatedev.example/about/">
+    <meta property="twitter:title" content="About Syndicate Developers - Global Software Solutions">
+    <meta property="twitter:description" content="Learn about our expert team, certifications, and global presence in software development.">
+    <meta property="twitter:image" content="https://syndicatedev.example/images/about-twitter.jpg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About Syndicate Developers",
+        "url": "https://syndicatedev.example/about",
+        "description": "Professional software development company with global presence. Expert in web, mobile, AI, and enterprise solutions.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Syndicate Developers"
+        }
+    }
+    </script>
+
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="dns-prefetch" href="https://formspree.io">
+    <link rel="preload" href="css/styles.css" as="style">
+
+    <title>About Us - Syndicate Developers</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="sidebar-expanded">
+    <!-- Top white bar with title and slogan -->
+    <div class="top-bar" role="banner">
+        <div class="top-bar-inner">
+            <div class="top-title">Syndicate Developers</div>
+            <div class="top-slogan">Crafting performant software — fast, reliable, beautiful</div>
+            <pre id="code-runner" class="top-code" aria-hidden="true"></pre>
+            <div class="top-controls">
+                <button id="hero-toggle" class="hero-toggle" aria-pressed="false" title="Pause or resume hero animations">Pause</button>
+            </div>
+        </div>
+    </div>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+
+    <header>
+        <nav aria-label="Main navigation" class="ai-nav sidebar-nav expanded">
+            <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="true">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-brand">
+                <div class="logo">
+                    <i class="fas fa-code ai-icon"></i>
+                    <span>Syndicate Developers</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Trusted</span>
+                </div>
+            </div>
+            <div class="nav-controls">
+                <ul class="nav-list">
+                    <li>
+                        <a href="home.html" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-link active" aria-current="page">
+                            <i class="fas fa-users"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.html" class="nav-link">
+                            <i class="fas fa-cogs"></i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html" class="nav-link">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Portfolio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-link cta-nav">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Get Quote</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="language-selector">
+                    <select id="language-select" onchange="changeLanguage()" aria-label="Select language">
+                        <option value="en">🇺🇸 EN</option>
+                        <option value="es">🇪🇸 ES</option>
+                        <option value="fr">🇫🇷 FR</option>
+                        <option value="de">🇩🇪 DE</option>
+                        <option value="zh">🇨🇳 中文</option>
+                        <option value="ja">🇯🇵 日本語</option>
+                        <option value="pt">🇧🇷 PT</option>
+                        <option value="ar">🇸🇦 العربية</option>
+                    </select>
+                </div>
+                <div class="nav-status">
+                    <div class="status-indicator online">
+                        <i class="fas fa-circle"></i>
+                        <span>Online</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>About Syndicate Developers</h1>
+                <p>Passionate developers building innovative solutions for the digital world</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section">
+            <h2>Our Story</h2>
+            <p>We are a collective of passionate developers collaborating on open-source and commercial projects. With years of combined experience, our mission is to build innovative, scalable, and user-friendly applications that solve real-world business problems.</p>
+            <p><strong>Our Expertise:</strong> Full-stack development, cloud architecture, DevOps, mobile applications, AI/ML integration, and enterprise solutions. We specialize in modern technologies including React, Node.js, Python, Docker, Kubernetes, and AWS.</p>
+            <p><strong>Certifications:</strong> AWS Certified Solutions Architect, Google Cloud Professional Developer, Microsoft Azure certifications, and Scrum Master credentials across our team.</p>
+            <div class="stats">
+                <div class="stat"><strong>50+</strong> Projects Completed</div>
+                <div class="stat"><strong>8+</strong> Years Experience</div>
+                <div class="stat"><strong>30+</strong> Satisfied Clients</div>
+                <div class="stat"><strong>99.9%</strong> Uptime SLA</div>
+                <div class="stat"><strong>24/7</strong> Support Available</div>
+                <div class="stat"><strong>5-Star</strong> Average Rating</div>
+            </div>
+        </section>
+
+        <!-- Global Presence Section -->
+        <section class="section">
+            <h2>Global Presence & Reach</h2>
+            <p class="section-intro">Serving clients worldwide with local expertise and global standards</p>
+
+            <div class="global-stats">
+                <div class="global-stat">
+                    <h3>25+</h3>
+                    <p>Countries Served</p>
+                </div>
+                <div class="global-stat">
+                    <h3>12</h3>
+                    <p>Time Zones Covered</p>
+                </div>
+                <div class="global-stat">
+                    <h3>15+</h3>
+                    <p>Languages Supported</p>
+                </div>
+                <div class="global-stat">
+                    <h3>6</h3>
+                    <p>Offices Worldwide</p>
+                </div>
+            </div>
+
+            <div class="offices-grid">
+                <div class="office">
+                    <h3><i class="fas fa-map-marker-alt"></i> San Francisco, USA</h3>
+                    <p>Headquarters & Innovation Hub</p>
+                    <p>123 Tech Street, San Francisco, CA 94105</p>
+                </div>
+                <div class="office">
+                    <h3><i class="fas fa-map-marker-alt"></i> London, UK</h3>
+                    <p>European Operations Center</p>
+                    <p>45 Digital Square, London EC2A 1AH</p>
+                </div>
+                <div class="office">
+                    <h3><i class="fas fa-map-marker-alt"></i> Singapore</h3>
+                    <p>Asia-Pacific Regional Office</p>
+                    <p>18 Marina Bay, Singapore 018956</p>
+                </div>
+                <div class="office">
+                    <h3><i class="fas fa-map-marker-alt"></i> Sydney, Australia</h3>
+                    <p>Oceanic Development Center</p>
+                    <p>88 George Street, Sydney NSW 2000</p>
+                </div>
+                <div class="office">
+                    <h3><i class="fas fa-map-marker-alt"></i> Berlin, Germany</h3>
+                    <p>Central European Hub</p>
+                    <p>25 Alexanderplatz, Berlin 10178</p>
+                </div>
+                <div class="office">
+                    <h3><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</h3>
+                    <p>African Innovation Center</p>
+                    <p>Westlands Road, Nairobi 00100</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="section">
+            <h2>Meet Our Team</h2>
+            <p class="section-intro">Our diverse team brings together expertise from around the world</p>
+
+            <div class="team-grid">
+                <div class="member">
+                    <img src="https://ui-avatars.com/api/?name=AM&background=3b82f6&color=fff&size=150" alt="Alifam Murithi - Lead Developer" loading="lazy">
+                    <h3>Alifam Murithi</h3>
+                    <div class="role">Lead Developer & CTO</div>
+                    <div class="skills">React, Node.js, Python, AWS</div>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:ebt1.12336.24@student.tharaka.ac.ke">ebt1.12336.24@student.tharaka.ac.ke</a></p>
+                        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254702572159" target="_blank">+254 702 572 159</a></p>
+                    </div>
+                    <div class="member-actions">
+                        <button class="btn-contact" onclick="contactMember('Alifam Murithi', 'contact')" aria-label="Contact Alifam Murithi">
+                            <i class="fas fa-envelope"></i> Contact
+                        </button>
+                        <button class="btn-request" onclick="contactMember('Alifam Murithi', 'request')" aria-label="Send project request to Alifam Murithi">
+                            <i class="fas fa-clipboard-list"></i> Request
+                        </button>
+                        <button class="btn-question" onclick="contactMember('Alifam Murithi', 'question')" aria-label="Ask Alifam Murithi a question">
+                            <i class="fas fa-question-circle"></i> Question
+                        </button>
+                        <a href="https://wa.me/254702572159" target="_blank" class="btn-whatsapp" aria-label="Contact Alifam Murithi on WhatsApp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <img src="https://ui-avatars.com/api/?name=BA&background=ec4899&color=fff&size=150" alt="Benaresa Arisa - UI/UX Designer" loading="lazy">
+                    <h3>Benaresa Arisa</h3>
+                    <div class="role">UI/UX Designer</div>
+                    <div class="skills">Figma, Adobe XD, User Research</div>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:ebt1.12323.24@student.tharaka.ac.ke">ebt1.12323.24@student.tharaka.ac.ke</a></p>
+                        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254703143073" target="_blank">+254 703 143 073</a></p>
+                    </div>
+                    <div class="member-actions">
+                        <button class="btn-contact" onclick="contactMember('Benaresa Arisa', 'contact')" aria-label="Contact Benaresa Arisa">
+                            <i class="fas fa-envelope"></i> Contact
+                        </button>
+                        <button class="btn-request" onclick="contactMember('Benaresa Arisa', 'request')" aria-label="Send project request to Benaresa Arisa">
+                            <i class="fas fa-clipboard-list"></i> Request
+                        </button>
+                        <button class="btn-question" onclick="contactMember('Benaresa Arisa', 'question')" aria-label="Ask Benaresa Arisa a question">
+                            <i class="fas fa-question-circle"></i> Question
+                        </button>
+                        <a href="https://wa.me/254703143073" target="_blank" class="btn-whatsapp" aria-label="Contact Benaresa Arisa on WhatsApp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <img src="https://ui-avatars.com/api/?name=TA&background=10b981&color=fff&size=150" alt="Tobias Asitiba - DevOps Engineer" loading="lazy">
+                    <h3>Tobias Asitiba</h3>
+                    <div class="role">DevOps Engineer</div>
+                    <div class="skills">Docker, Kubernetes, AWS, CI/CD</div>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:ebt1.12363.24@student.tharaka.ac.ke">ebt1.12363.24@student.tharaka.ac.ke</a></p>
+                        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254757077671" target="_blank">+254 757 077 671</a></p>
+                    </div>
+                    <div class="member-actions">
+                        <button class="btn-contact" onclick="contactMember('Tobias Asitiba', 'contact')" aria-label="Contact Tobias Asitiba">
+                            <i class="fas fa-envelope"></i> Contact
+                        </button>
+                        <button class="btn-request" onclick="contactMember('Tobias Asitiba', 'request')" aria-label="Send project request to Tobias Asitiba">
+                            <i class="fas fa-clipboard-list"></i> Request
+                        </button>
+                        <button class="btn-question" onclick="contactMember('Tobias Asitiba', 'question')" aria-label="Ask Tobias Asitiba a question">
+                            <i class="fas fa-question-circle"></i> Question
+                        </button>
+                        <a href="https://wa.me/254757077671" target="_blank" class="btn-whatsapp" aria-label="Contact Tobias Asitiba on WhatsApp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <img src="https://ui-avatars.com/api/?name=DN&background=f59e0b&color=fff&size=150" alt="Davis Njagi - Project Manager" loading="lazy">
+                    <h3>Davis Njagi</h3>
+                    <div class="role">Project Manager</div>
+                    <div class="skills">Agile, Scrum, Jira, Communication</div>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:ebt1.12337.24@student.tharaka.ac.ke">ebt1.12337.24@student.tharaka.ac.ke</a></p>
+                        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254112980388" target="_blank">+254 112 980 388</a></p>
+                    </div>
+                    <div class="member-actions">
+                        <button class="btn-contact" onclick="contactMember('Davis Njagi', 'contact')" aria-label="Contact Davis Njagi">
+                            <i class="fas fa-envelope"></i> Contact
+                        </button>
+                        <button class="btn-request" onclick="contactMember('Davis Njagi', 'request')" aria-label="Send project request to Davis Njagi">
+                            <i class="fas fa-clipboard-list"></i> Request
+                        </button>
+                        <button class="btn-question" onclick="contactMember('Davis Njagi', 'question')" aria-label="Ask Davis Njagi a question">
+                            <i class="fas fa-question-circle"></i> Question
+                        </button>
+                        <a href="https://wa.me/254112980388" target="_blank" class="btn-whatsapp" aria-label="Contact Davis Njagi on WhatsApp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <img src="https://ui-avatars.com/api/?name=SO&background=8b5cf6&color=fff&size=150" alt="Sylous OCS - AI/ML Specialist" loading="lazy">
+                    <h3>Sylous OCS</h3>
+                    <div class="role">AI/ML Specialist</div>
+                    <div class="skills">Python, TensorFlow, NLP, Computer Vision</div>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:ebt1.12328.24@student.tharaka.ac.ke">ebt1.12328.24@student.tharaka.ac.ke</a></p>
+                        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254762012157" target="_blank">+254 762 012 157</a></p>
+                    </div>
+                    <div class="member-actions">
+                        <button class="btn-contact" onclick="contactMember('Sylous OCS', 'contact')" aria-label="Contact Sylous OCS">
+                            <i class="fas fa-envelope"></i> Contact
+                        </button>
+                        <button class="btn-request" onclick="contactMember('Sylous OCS', 'request')" aria-label="Send project request to Sylous OCS">
+                            <i class="fas fa-clipboard-list"></i> Request
+                        </button>
+                        <button class="btn-question" onclick="contactMember('Sylous OCS', 'question')" aria-label="Ask Sylous OCS a question">
+                            <i class="fas fa-question-circle"></i> Question
+                        </button>
+                        <a href="https://wa.me/254762012157" target="_blank" class="btn-whatsapp" aria-label="Contact Sylous OCS on WhatsApp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <img src="https://ui-avatars.com/api/?name=ST&background=06b6d4&color=fff&size=150" alt="Syndicate Team - Full Stack Developer" loading="lazy">
+                    <h3>Syndicate Team</h3>
+                    <div class="role">Full Stack Developer</div>
+                    <div class="skills">React Native, Flutter, iOS, Android</div>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@syndicatedev.example">info@syndicatedev.example</a></p>
+                    </div>
+                    <div class="member-actions">
+                        <button class="btn-contact" onclick="contactMember('Syndicate Team', 'contact')" aria-label="Contact Syndicate Team">
+                            <i class="fas fa-envelope"></i> Contact
+                        </button>
+                        <button class="btn-request" onclick="contactMember('Syndicate Team', 'request')" aria-label="Send project request to Syndicate Team">
+                            <i class="fas fa-clipboard-list"></i> Request
+                        </button>
+                        <button class="btn-question" onclick="contactMember('Syndicate Team', 'question')" aria-label="Ask Syndicate Team a question">
+                            <i class="fas fa-question-circle"></i> Question
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Work Together?</h2>
+                <p>Let's discuss your project and bring your vision to life.</p>
+                <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+                <a href="services.html" class="btn btn-secondary">Our Services</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Syndicate Developers</h3>
+                <p>Building the future, one line of code at a time.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/syndicate-developers" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/syndicatedev" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/benarisa" target="_blank" rel="noopener noreferrer" aria-label="Follow us on GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/syndicatedev" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/syndicatedev" target="_blank" rel="noopener noreferrer" aria-label="Like us on Facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html#web-development">Web Development</a></li>
+                    <li><a href="services.html#mobile-apps">Mobile Apps</a></li>
+                    <li><a href="services.html#ai-ml">AI & Machine Learning</a></li>
+                    <li><a href="services.html#cloud-services">Cloud Services</a></li>
+                    <li><a href="services.html#consulting">Consulting</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-envelope"></i> syndicatedev19@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Syndicate Developers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/chatbot.js"></script>
+
+    <!-- Chatbot Widget -->
+    <div class="chat-widget">
+        <button class="chat-button" id="chat-toggle" aria-label="Toggle chat window">
+            <i class="fas fa-comments"></i>
+            <span class="chat-badge" id="chat-badge" style="display:none;">1</span>
+        </button>
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <div>
+                    <h4>Syndicate Assistant</h4>
+                    <div class="chat-header-info">🟢 Online - Usually replies instantly</div>
+                </div>
+                <button class="chat-close" id="chat-close">✕</button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot">
+                    <div class="message-avatar">💬</div>
+                    <div class="message-content">
+                        <div class="message-bubble">Hi! 👋 I'm Davis from Syndicate Developers. How can I help you today?</div>
+                        <div class="message-author">Davis</div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input-field" placeholder="Ask me anything...">
+                <button id="chat-send" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Intelligent Chatbot Logic
+        const chatbotKnowledge = {
+            services: {
+                keywords: ['service', 'services', 'what do you', 'what do you offer', 'offer', 'do you do', 'do'],
+                response: `We offer comprehensive software development services:
+                
+✅ Web Development ($2,500 - $15,000)
+✅ Mobile Apps ($5,000 - $25,000)
+✅ AI & ML Solutions ($8,000 - $50,000)
+✅ Cloud Services ($1,500 - $8,000/month)
+✅ Consulting ($150 - $300/hour)
+✅ Support & Maintenance ($500 - $5,000/month)
+
+Want details about any specific service?`
+            },
+            pricing: {
+                keywords: ['price', 'pricing', 'cost', 'fee', 'fees', 'how much', 'expensive', 'affordable', 'budget'],
+                response: `Here's our pricing breakdown:
+
+💻 Web Development: $2,500 - $15,000
+📱 Mobile Apps: $5,000 - $25,000 per app
+🤖 AI/ML Solutions: $8,000 - $50,000
+☁️ Cloud Services: $1,500 - $8,000/month
+💡 Consulting: $150 - $300/hour
+🔧 Support & Maintenance: $500 - $5,000/month
+
+Pricing varies based on complexity. Want a custom quote?`
+            },
+            about: {
+                keywords: ['about', 'who are you', 'company', 'team', 'who', 'background'],
+                response: `We're Syndicate Developers, a professional software development company with global presence! 🌍
+
+Our Team:
+👨‍💼 Davis Njagi  
+👩‍💼 Benaresa Arisa
+👨‍💼 Tobias Asitiba
+👨‍💼 Alifam Murithi
+👨‍💼 Sylous OCS
+
+We specialize in web apps, mobile development, AI solutions, cloud services, and enterprise consulting. Our mission is to deliver innovative, high-quality software that drives your business growth.
+
+📊 50+ Projects | 500M+ Daily Transactions Handled | 1M+ Users Served`
+            },
+            contact: {
+                keywords: ['contact', 'email', 'phone', 'call', 'reach', 'how to reach', 'message', 'talk to'],
+                response: `Ready to get in touch? Here are our contact options:
+
+📧 Email: syndicatedev19@gmail.com
+📞 Phone: +254-703-143-073
+🕐 Availability: 24/7 Support
+
+You can also visit our Contact page to send a message directly, or use this chat to discuss your project needs!`
+            },
+            portfolio: {
+                keywords: ['portfolio', 'work', 'projects', 'case studies', 'examples', 'what have you done', 'show'],
+                response: `Check out our impressive portfolio! 🎯
+
+Featured Projects:
+🚀 Global FinTech Platform - 500M+ daily transactions
+🛍️ E-Commerce Solution - 40% conversion increase
+🏥 Healthcare System - 1M+ patient records
+📊 AI Analytics Platform - 100TB+ data processing
+
+Our team has successfully delivered projects across various industries including finance, healthcare, retail, and enterprise solutions.
+
+Visit our Portfolio page to see detailed case studies!`
+            },
+            hiring: {
+                keywords: ['hiring', 'job', 'career', 'work', 'join', 'apply', 'opportunity'],
+                response: `Interested in joining our team? 🎉
+
+We're always looking for talented developers, designers, and engineers! Current opportunities include:
+- Senior Full-Stack Developers
+- Mobile App Developers
+- AI/ML Engineers
+- DevOps Specialists
+
+Check our Careers page for detailed job listings, benefits, and application process. All applications are reviewed promptly!`
+            },
+            blog: {
+                keywords: ['blog', 'article', 'news', 'read', 'learning', 'tips', 'tutorial'],
+                response: `Great question! 📚 We publish regular articles on:
+- Latest Technology Trends
+- Best Development Practices
+- Case Studies & Success Stories
+- Industry Insights
+
+Visit our Blog section to read articles from our team experts including Alifam, Tobias, Benaresa, Sylous, and Davis. Stay updated with weekly insights!`
+            },
+            greeting: {
+                keywords: ['hi', 'hello', 'hey', 'howdy', 'good morning', 'good afternoon', 'good evening'],
+                response: `Hey there! 👋 Welcome to Syndicate Developers! I'm Davis. How can I assist you today? Feel free to ask about our services, pricing, team, or anything else!`
+            },
+            default: {
+                response: `Thanks for your message! 😊
+
+I can help you with:
+✨ Our Services & Expertise
+💰 Pricing Information  
+👥 Meet Our Team
+📁 Portfolio & Case Studies
+💼 Career Opportunities
+📞 Contact Information
+📚 Blog & Resources
+
+What would you like to know? Just ask!`
+            }
+        };
+
+        function findMatchingResponse(userMessage) {
+            const lowerMessage = userMessage.toLowerCase();
+            
+            for (const [key, data] of Object.entries(chatbotKnowledge)) {
+                if (data.keywords) {
+                    for (const keyword of data.keywords) {
+                        if (lowerMessage.includes(keyword.toLowerCase())) {
+                            return data.response;
+                        }
+                    }
+                }
+            }
+            
+            return chatbotKnowledge.default.response;
+        }
+
+        function addMessage(text, isUser = false) {
+            const messagesContainer = document.getElementById('chat-messages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isUser ? 'user' : 'bot'}`;
+            
+            if (isUser) {
+                messageDiv.innerHTML = `
+                    <div class="message-content">
+                        <div class="message-bubble">${escapeHtml(text)}</div>
+                    </div>
+                    <div class="message-avatar">👤</div>
+                `;
+            } else {
+                messageDiv.innerHTML = `
+                    <div class="message-avatar">💬</div>
+                    <div class="message-content">
+                        <div class="message-bubble">${escapeHtml(text)}</div>
+                        <div class="message-author">Davis</div>
+                    </div>
+                `;
+            }
+            
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        document.getElementById('chat-toggle').addEventListener('click', function() {
+            const chatWindow = document.getElementById('chat-window');
+            const chatButton = this;
+            const badge = document.getElementById('chat-badge');
+            
+            chatWindow.classList.toggle('active');
+            chatButton.classList.toggle('active');
+            badge.style.display = 'none';
+        });
+
+        document.getElementById('chat-close').addEventListener('click', function() {
+            document.getElementById('chat-window').classList.remove('active');
+            document.getElementById('chat-toggle').classList.remove('active');
+        });
+
+        document.getElementById('chat-send').addEventListener('click', function() {
+            const input = document.getElementById('chat-input-field');
+            const message = input.value.trim();
+            
+            if (message) {
+                addMessage(message, true);
+                input.value = '';
+                
+                setTimeout(() => {
+                    const response = findMatchingResponse(message);
+                    addMessage(response, false);
+                }, 500);
+            }
+        });
+
+        document.getElementById('chat-input-field').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.getElementById('chat-send').click();
+            }
+        });
+
+        // Show badge on page load
+        setTimeout(() => {
+            document.getElementById('chat-badge').style.display = 'flex';
+        }, 2000);
+    </script>
+</body>
+</html>

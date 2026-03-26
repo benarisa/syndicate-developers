@@ -1,0 +1,18 @@
+site_name: Syndicate Developers
+site_description: Professional software development solutions
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: deep-orange
+
+nav:
+  - Home: index.html
+  - About: about.html
+  - Services: services.html
+  - Portfolio: portfolio.html
+  - Contact: contact.html
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
