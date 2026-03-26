@@ -1,5 +1,6 @@
 /* Accessibility improvements */
 .skip-to-main {
+    display: none;
     position: absolute;
     top: -40px;
     left: 0;
